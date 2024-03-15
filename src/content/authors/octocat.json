@@ -1,0 +1,13 @@
+{
+  "name": "octocat",
+  "avatar": "/images/avatars/octocat/avatar.png",
+  "showcase": [
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "mi pagina",
+        "url": "github.com"
+      }
+    }
+  ]
+}
