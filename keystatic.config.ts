@@ -3,7 +3,7 @@ import { config, fields, collection } from '@keystatic/core';
 export default config({
   storage: {
     kind: 'github',
-    repo: 'MrChrisFabian/idealbeta',
+    repo: 'MrChrisFabian/idealHost',
   },
   //Puedo cambiar la ui del admin mode con ui:{}
   ui: {
