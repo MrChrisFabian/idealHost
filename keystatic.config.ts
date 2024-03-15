@@ -4,7 +4,7 @@ export default config({
   storage: {
     kind: 'github',
     pathPrefix:'prod',
-    repo:'MrChrisFabian/IdealServer',
+    repo:'MrChrisFabian/idealbeta',
   },
   //Puedo cambiar la ui del admin mode con ui:{}
   ui: {
