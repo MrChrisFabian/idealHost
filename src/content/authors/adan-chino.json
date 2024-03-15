@@ -1,0 +1,13 @@
+{
+  "name": "adan chino",
+  "avatar": "/images/avatars/adan-chino/avatar.jpeg",
+  "showcase": [
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "mi github",
+        "url": "https://github.com/geroxima"
+      }
+    }
+  ]
+}

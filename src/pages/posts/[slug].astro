@@ -1,0 +1,49 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+
+const { slug } = Astro.params;
+if (!slug) throw new Error("Slug not found");
+const post = await getEntry("posts", slug);
+
+if (!post) throw new Error("No post found for this slug");
+const { Content } = await post.render();
+
+//recuperando mi colección de authors
+const auth = await getCollection("authors");
+// Guardamos solo los autores que escribieron este post
+const authP = await auth.filter((e) => post.data.authors.includes(e.id));
+
+// Generate static pages
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  return posts.map((post) => ({ params: { slug: post.slug } }));
+}
+---
+
+<Layout title={post.data.title}>
+  <h1>{post.data.title}</h1>
+  <Content />
+
+  {
+    Object.keys(JSON.stringify(post.data.authors)).length > 0 && (
+      <>
+        <h2>Written By:</h2>
+        <ul>
+          {authP.map((author) => (
+            <li>
+              <p>{author.data.name}</p>
+              <img
+                src={author.data.avatar}
+                alt="profile photo of the autor"
+                width="50px"
+                height="60px"
+              />
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+</Layout>

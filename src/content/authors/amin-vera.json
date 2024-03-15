@@ -1,0 +1,13 @@
+{
+  "name": "Amin Vera",
+  "avatar": "/images/avatars/amin-vera/avatar.jpg",
+  "showcase": [
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "Mi Github",
+        "url": "https://github.com/geroxima"
+      }
+    }
+  ]
+}

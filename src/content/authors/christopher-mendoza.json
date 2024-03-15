@@ -1,0 +1,20 @@
+{
+  "name": "Christopher Mendoza",
+  "avatar": "/images/avatars/christopher-mendoza/avatar.png",
+  "showcase": [
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "Christopher",
+        "url": "https://chris-portafolio.netlify.app/"
+      }
+    },
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "Mi portfolio",
+        "url": "hola.com"
+      }
+    }
+  ]
+}
