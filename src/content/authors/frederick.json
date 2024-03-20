@@ -1,0 +1,13 @@
+{
+  "name": "Frederick ",
+  "avatar": "/images/avatars/frederick/avatar.jpg",
+  "showcase": [
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "mi portafolio`",
+        "url": "chrisportafolio.com"
+      }
+    }
+  ]
+}
